@@ -44,12 +44,12 @@ export const App = () => {
         sortedGoods = [...goodsFromServer];
     }
 
-    setGoods(sortedGoods);
-    setSortType(type);
-
     if (isReversed) {
       sortedGoods.reverse();
     }
+
+    setGoods(sortedGoods);
+    setSortType(type);
   };
 
   const reverseGoods = () => {
